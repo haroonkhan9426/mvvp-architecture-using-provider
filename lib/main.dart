@@ -1,3 +1,4 @@
+import 'package:base_flutter_project/ui/screens/counter_screen.dart';
 import 'package:base_flutter_project/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<CounterVM>(create: (_) => CounterVM()),
       ],
       child: MaterialApp(
-        home: SplashScreen(),
+        home: CounterScreen(),
       ),
     );
   }

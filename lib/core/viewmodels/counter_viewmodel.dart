@@ -8,5 +8,6 @@ class CounterVM extends ChangeNotifier {
 
   void increment() {
     _count++;
+    notifyListeners();
   }
 }
