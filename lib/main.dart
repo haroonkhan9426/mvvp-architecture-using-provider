@@ -4,8 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'core/viewmodels/counter_viewmodel.dart';
+import 'service_locator.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  setupServiceLocator();
+  return runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
